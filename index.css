@@ -1,0 +1,80 @@
+* {
+    font-family: monospace;
+    outline: none;
+    box-sizing: border-box;
+}
+/* Ex1 */
+.click-me,
+.clear-el {
+    height: 50px;  
+    line-height: 50px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.click-me:hover {
+    box-shadow: 0 0 10px 0px rgb(13,110,253);
+    font-weight: bold;
+}
+.clear-el:hover {
+    box-shadow: 0 0 10px 0px rgb(220,53,69);
+    font-weight: bold;
+}
+.el-item {
+    height: 50px;  
+    line-height: 50px;
+    margin: 10px 0;
+}
+
+/* Ex2 */
+.todo-box {
+    position: relative;
+}
+.todo-box label{
+    cursor: text;
+    user-select: none;
+    font-size: 14px;
+    color: slategray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    transition: all 0.25s ease-in;
+}
+#todo-input {
+    padding-left: 20px;
+    line-height: 50px;
+    border: 1px solid slategray;
+    font-size: 14px;
+}
+#todo-input:not(:placeholder-shown) {
+    border: 1px solid rgb(13,110,253);
+}
+#todo-input:focus {
+    border: 1px solid rgb(13,110,253)
+}
+#todo-input:focus + label,
+#todo-input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 50px;
+    font-weight: bold;
+    color: rgb(13,110,253);
+    padding: 0px 10px;
+    background-color: white;
+}
+.todo-btn-add {
+    line-height: 50px;
+}
+.todo-btn-add:hover {
+    box-shadow: 0 0 10px 0 rgb(25,135,84);
+    font-weight: bold;
+}
+.todo-list span {
+
+}
+
+/* Ex3 */
+.st-list-item {
+    border: 2px solid saddlebrown;
+    padding: 20px;
+    margin: 10px;
+}
